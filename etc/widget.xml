@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="dmatthew_hotspot" class="Dmatthew\Hotspot\Block\Hotspot">
+        <label translate="true">Image Hotspot</label>
+        <description translate="true">Adds a hotspot button that when clicked opens up a tooltip</description>
+        <parameters>
+            <parameter xsi:type="text" name="top_position" visible="true" required="true">
+                <label translate="true">Top Position</label>
+                <description translate="true">Specify a number in percent from the top of the containing element. Example: A value of "85" will place the hotspot 85% down the element from the top.</description>
+            </parameter>
+            <parameter xsi:type="text" name="left_position" visible="true" required="true">
+                <label translate="true">Left Position</label>
+                <description translate="true">Specify a number in percent from the left of the containing element. Example: A value of "85" will place the hotspot 85% to the right of the left edge of the element.</description>
+            </parameter>
+            <parameter xsi:type="text" name="color" visible="true" required="true">
+                <label translate="true">Color</label>
+                <description translate="true">Color of the inner plus sign.</description>
+            </parameter>
+            <parameter xsi:type="text" name="background_color" visible="true" required="true">
+                <label translate="true">Background Color</label>
+                <description translate="true">Background color of the plus sign.</description>
+            </parameter>
+            <parameter xsi:type="text" name="title" visible="true">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter xsi:type="block" name="body" visible="true">
+                <label translate="true">Body</label>
+                <block class="Dmatthew\WidgetParameters\Block\Adminhtml\Widget\Type\Textarea" />
+            </parameter>
+            <parameter xsi:type="text" name="button_text" visible="true">
+                <label translate="true">Button Text</label>
+            </parameter>
+            <parameter xsi:type="text" name="button_link" visible="true">
+                <label translate="true">Button Link</label>
+            </parameter>
+            <parameter name="template" xsi:type="select" visible="true" required="true">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="default" value="Dmatthew_Hotspot::hotspot.phtml" selected="true">
+                        <label translate="true">Hotspot Tooltip Template</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

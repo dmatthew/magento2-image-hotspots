@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <head>
+            <css src="Dmatthew_Hotspot::css/style.css"/>
+        </head>
+        <referenceContainer name="before.body.end">
+            <block class="\Magento\Framework\View\Element\Template" name="dmatthew.hotspot.init" template="Dmatthew_Hotspot::js.phtml" />
+        </referenceContainer>
+    </body>
+</page>

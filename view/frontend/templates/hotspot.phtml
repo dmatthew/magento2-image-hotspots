@@ -1,0 +1,21 @@
+<?php
+/** @var $block Dmatthew\Hotspot\Block\Hotspot */
+?>
+<div class="cd-product cd-container">
+    <div class="cd-product-wrapper">
+        <img src="https://shop.xterraplanet.com/media/wysiwyg/homepage_cta/Aspen-Grid-QuoteImage.jpg"><!-- image of our product -->
+        <ul>
+            <li class="cd-single-point" style="top: <?php echo $block->getData('top_position') ?>%; left: <?php echo $block->getData('left_position') ?>%;">
+                <a class="cd-img-replace" href="#0">More</a>
+                <div class="cd-more-info cd-top"> <!-- 4 classes available: cd-top, cd-bottom, cd-left, cd-right  -->
+                    <h2><?php echo $block->getData('title') ?></h2>
+                    <p><?php echo $block->getData('body') ?></p>
+                    <a href="<?php echo $block->getData('button_link') ?>" class="cd-more-link"><?php echo $block->getData('button_text') ?></a>
+                    <a href="#0" class="cd-close-info cd-img-replace">Close</a>
+                </div>
+            </li>
+
+            <!-- other hotspots here -->
+        </ul>
+    </div>
+</div>
