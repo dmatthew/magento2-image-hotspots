@@ -2,7 +2,7 @@
     "name": "dmatthew/magento2-image-hotspots",
     "description": "Create hotspots which open tooltips when clicked to showcase product details.",
     "require": {
-        "php": "~7.0|~7.1",
+        "php": "~7.0.0|~7.1.0",
         "magento/module-widget": "*",
         "dmatthew/magento2-widget-parameters": "*"
     },
